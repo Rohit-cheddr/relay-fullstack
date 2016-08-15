@@ -15,8 +15,8 @@ if (process.env.NODE_ENV === 'production') {
   appEntry = [path.join(__dirname, 'client/index.js')];
   devtool = 'source-map';
   plugins = [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
+    // new webpack.optimize.DedupePlugin(),
+    // new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
     new webpack.DefinePlugin({
       'process.env': {
